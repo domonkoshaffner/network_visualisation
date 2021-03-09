@@ -1,0 +1,45 @@
+Social, at least 10.000 nodes, directed - Facebook wosn wall
+
+Edge Type: Wall post
+Node Type: Facebook account
+Avg Edges: 876,993
+Avg Nodes: 46,952
+
+Biological, at least 1000 nodes - Protein-protein interactions
+
+Edge Type: Co-complex association
+Node Type: Protein Interactions
+Avg Edges: 9,070
+Avg Nodes: 1,622
+
+
+Weighted network, at least 100 nodes - Hollywood movies
+
+Edge Type: Collaboration
+Node Type: Composers, Producers
+Avg Edges: 192.00
+Avg Nodes: 102.00
+
+
+Less than 100 nodes - Baseball steroid suppliers
+
+Edge Type: Supplier
+Node Type: Provider, Player
+Avg Edges: 568.50
+Avg Nodes: 42.00
+
+
+Less than 100 nodes - UK domestic flights
+
+Edge Type: Route
+Node Type: Airport
+Avg Edges: 3,016.00
+Avg Nodes: 47.00
+
+
+Weighted network, at least 100 nodes - E. coli trascription network
+
+Edge Type: Regulation
+Node Type: Operon
+Avg Edges: 577.00
+Avg Nodes: 419.00
