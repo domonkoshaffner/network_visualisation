@@ -1,0 +1,104 @@
+##########################################################################
+#
+#  USEFUL INFORMATION ABOUT THE UK TIME-VARYING DOMESTIC FLIGHT DATASET
+#
+##########################################################################
+
+Copyleft 2018 Alessio Cardillo
+
+This file contains some information on how to use the time-varying UK flight dataset. Data is provided "as is" and without warranties as to performance or quality or any other warranties whether expressed or implied. By using this data set, you agree not to perform reverse engineering to extract airlines or any other information, and not to perform comparative studies about the performance of different air transport actors.
+
+################
+### FOREWORD ###
+################
+
+This dataset is exactly the complete set used in the paper: "Comparing spatial networks: A 'one size fits all' efficiency-driven approach" by Morer et al. appeared in https://arxiv.org/abs/1807.00565 . It contains the structure of a time-varying network of domestic flights operated every year in the United Kingdom from 1990 until 2003.
+
+After unpacking the .zip archive, you will find the following CSV (Comma Separated Value/Variable) files:
+
+1) uk-airports-icao-id.csv
+2) uk-airports-coordinates-list.csv
+3) Table_1_12_Domestic_Passengers_Uplifted_Between_UK_Airports_XXXX_adjlist.csv (where XXXX is the year)
+
+More details about this dataset can be found in the paper: 
+
+https://arxiv.org/abs/1807.00565
+
+The data have been found in the website of the United Kingdom Civil Aviation Authority (CAA), available at the following URL:
+
+https://www.caa.co.uk/Airline_data_historic/
+
+
+################
+### AIRPORTS ###
+################
+
+The information about the airports is contained in two separate files:
+
+-- uk-airports-icao-id.csv
+-- uk-airports-coordinates-list.csv
+
+The first contains details about the name and the ICAO ID of the airport. Each filed is separated by a semicolon ";" . The structure is the following one:
+
+Name  -->  name of the airport
+ICAO ID  -->  4 digit ICAO ID of the airport
+City  -->  name of the city where the airport is located
+Alternate Name  -->  alternative name of the airport
+
+Example:
+
+ABERPORTH;EGFA;;WEST WALES
+ALDERGROVE;EGAA;Belfast;BELFAST INTL
+BARKSTON HEATH;EGYE;;
+
+
+The second file, instead, contains information about the position of the airports and could be used, for example, to draw the networks on a map. As before, each field is separated by a semicolon ";". The meaning of each field is the following:
+
+Name  -->  Name of the airport
+City  -->  City where the airport is located
+ICAO code  -->  ICAO ID of the airport
+Latitude  --> Latitude (in degrees) of the airport
+Longitude  -->  Longitude (in degree) of the airport
+
+Example:
+
+Belfast International Airport;Belfast;EGAA;54.6575012207;-6.2158298492399995
+St Angelo Airport;Enniskillen;EGAB;54.39889907836914;-7.651669979095459
+George Best Belfast City Airport;Belfast;EGAC;54.618099212646484;-5.872499942779541
+
+
+
+###############
+### FLIGHTS ###
+###############
+
+The information about the flights operated each year are contained in thirteen files named "Table_1_12_Domestic_Passengers_Uplifted_Between_UK_Airports_XXXX_adjlist.csv", where XXXX denotes the year. There files contain the adjacency lists of the networks with fields separated by semicolons ";". The network is weighted and undirected. The content of each filed is the following:
+
+this_apt_name  -->  Name of the airport 
+that_apt_name  -->  Name of the airport
+passengers  -->  Number of passengers transported
+
+Example:
+
+HEATHROW;ABERDEEN;444719
+HEATHROW;BELFAST INTERNATIONAL;1074943
+HEATHROW;BIRMINGHAM;108804
+HEATHROW;CARDIFF WALES;179
+
+
+NOTE: To ensure a perfect match between the names and the ICAO IDs, it is better to use the file "uk-airports-icao-id.csv" .
+
+
+#################
+### LICENSING ###
+#################
+
+Copyright (C)  2018  Alessio Cardillo.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled "GNU
+    Free Documentation License"
+
+# end of file
