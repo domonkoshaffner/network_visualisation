@@ -2,7 +2,13 @@
 
 This directory contains the codes, images, cytoscape files and datasets for visualising multiple different networks.
 
-## The code contains the followings:
+## The uploaded files
+
+The datasets folder contains the data for all the networks and the newly generated nodes and edges for the different random network models. \
+The images folder contains all the images generated during the modelling and simulations. \
+The graph_tool.ipynb contains visualisations for the block model using graph-tool. \
+
+## The main code contains the followings:
 
 1: Importing the different data sets \
 2: Calculating centralities \
