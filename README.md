@@ -1,4 +1,4 @@
-# Network Visualisation using Phyton
+# Network Visualisation using Python
 
 This directory contains the codes, images, cytoscape files and datasets for visualising multiple different networks.
 
