@@ -9,5 +9,5 @@ This directory contains the codes, images, cytoscape files and datasets for visu
 3: Calculating different communities \
 4: Stochastic Block Model \
 5: Comparison to random networks - Erdos-Renyi and Configuration Model \
-6: Assortativity and Dissortativity \
+6: Assortativity and Dissortativity 
 
